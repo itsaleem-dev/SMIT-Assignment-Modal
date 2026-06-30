@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Modern Modal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css">
+</head>
+
+<body>
+
+    <button class="btn" onclick="openModal()">Open Modal</button>
+
+    <div class="overlay" id="overlay" onclick="outside(event)">
+        <div class="modal">
+            <i class="ri-close-line close-icon" onclick="closeModal()"></i>
+
+            <h2>Welcome 👋</h2>
+            <p style="font-size: 21.5px;">Har expert kabhi beginner tha. Aaj jo mushkil lag raha hai, kal tumhari
+                strength ban jayega. Bas rukna
+                nahi, continue rehna — success slowly but surely tumhari taraf aa rahi hoti hai</p>
+        </div>
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+
+</html>
